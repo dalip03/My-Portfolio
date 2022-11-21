@@ -13,6 +13,8 @@ import { ThemeContext } from '../../contexts/ThemeContext';
 import { contactsData } from '../../data/contactsData';
 import { socialsData } from '../../data/socialsData';
 import './Contacts.css';
+import { db} from '../Firebase/firebase';
+
 
 function Contacts() {
     const [open, setOpen] = useState(false);
@@ -117,6 +119,31 @@ function Contacts() {
 
     const handleContactForm = (e) => {
         e.preventDefault();
+        console.log(e)
+
+        // add data in firebase 
+        var data = new FormData(e.currentTarget);
+        var name = data.get('user_name');
+        var email = data.get('user_email');
+        var message = data.get('message');
+
+
+       
+        db.collection("Portfolio")
+          .add({
+            Name: name,
+            Email: email,
+            Message: message,
+          })
+          .then((succ) => {
+            alert("Your Application is send to Dalip :) ");
+          })
+          .catch((err) => {
+            alert("can't send your Application , please send Again :) ");
+          });
+
+        //   end  add data in firebase 
+      
 
         if (name && email && message) {
             if (isEmail(email)) {

@@ -13,11 +13,11 @@ function HomePage() {
             <Navbar />
             <Landing />
             <About />
-            <Experience />
             <Skills />
             <Projects />
+            <Experience />
             <Education />
-            <Blog />
+            {/* <Blog /> */}
             <Contacts />
         </div>
     )
