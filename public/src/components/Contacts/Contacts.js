@@ -123,6 +123,7 @@ function Contacts() {
 
         // add data in firebase 
         var data = new FormData(e.currentTarget);
+        
         var name = data.get('user_name');
         var email = data.get('user_email');
         var message = data.get('message');
