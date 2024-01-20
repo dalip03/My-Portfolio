@@ -11,6 +11,24 @@ import two from '../assets/svg/projects/two.svg'
 export const projectsData = [
     {
         id: 1,
+        projectName:'Stock Market Analysis',
+        projectDesc: 'Stock market analysis involves evaluating and interpreting various factors related to financial instruments, such as stocks, bonds, and other securities, to make informed investment decisions. ',
+        tags:['JS', 'HTML', 'PYTHON', 'FLASK'],
+        code:'https://github.com/dalip03/Stock-market',
+        demo:'#',
+        image:one
+    },
+    {
+        id: 2,
+        projectName:'Gym Management',
+        projectDesc: 'Gym Management application designed to streamline and automate the administrative tasks associated with running a fitness center or gym. This system helps gym owners, managers, and staff manage various aspects of their operations more efficiently.',
+        tags:['React', 'js', 'MaterialUI', 'MongoDB'],
+        code:'https://github.com/dalip03/GymManagement1',
+        demo:'#',
+        image:four
+    },
+    {
+        id: 3,
         projectName: 'Medilog',
         projectDesc: ' Medilog is online Log Medicines application.It’s an easy to you website which helps you to Log the Medicines Record , View All Previous saved records . We can Edit , Delete and Update the saved record as well .',
         tags: ['Java', 'MongoDB', 'HTML,CSS', 'Servlet, JSP'],
@@ -19,7 +37,7 @@ export const projectsData = [
         image: six
     },
     {
-        id: 2,
+        id: 4,
         projectName: 'E-Voting System',
         projectDesc: 'ONLINE VOTING SYSTEM” is an online voting technique. It is based on the other online services like “ONLINE RESERVATION SYSTEM” .In this system people who have citizenship of INDIA and whose age is above 18 years of any sex can give his\her vote online without going to any polling booth.',
         tags: ['PHP', 'HTML,CSS', 'MySql'],
@@ -28,7 +46,7 @@ export const projectsData = [
         image: seven
     },
     {
-        id: 3,
+        id: 5,
         projectName: 'E-Commerce',
         projectDesc: 'The "Online E-commerce System" has been developed to override the problems prevailing in the practicing manual system. This software is supported to eliminate and in some cases reduce the hardships faced by this existing system',
         tags: ['React', 'Firebase', 'Material Ui'],
